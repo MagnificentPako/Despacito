@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+}
+
+#player, #despacito, #overlay {
+    height: 100%;
+    width: 100%;
+}
+
+#despacito {
+    overflow: hidden;
+    background-color: black;
+}
+
+#overlay {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+#header {
+    top: 0;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    height: 3rem;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 4rem;
+}
+
+#playing {
+    display: inline;
+}
+
+#footer, #header {
+    background-image: url(https://i.imgur.com/LVSJDgy.gif);
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 5rem;
+    position: absolute;
+    padding: 2rem;
+    text-align: center;
+}.loader {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: -1;
+  }
+  
+  .loader span {
+    z-index: 1;
+    width: 330px;
+    height: 518px;
+    /*   margin: -280px 40px 54px  -34px; */
+    background: url("https://i.imgur.com/ivNS0GN.png");
+    opacity: 0;
+    -webkit-animation: loader 10s infinite linear;
+    -moz-animation: loader 10s infinite linear;
+    animation: loader 10s infinite linear;
+  }
+  
+  .loader span:nth-child(5n+5) {
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+  }
+  
+  .loader span:nth-child(3n+2) {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
+  
+  .loader span:nth-child(2n+5) {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+  }
+  
+  .loader span:nth-child(3n+10) {
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    animation-delay: 2.7s;
+  }
+  
+  .loader span:nth-child(7n+2) {
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+  }
+  
+  .loader span:nth-child(4n+5) {
+    -webkit-animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
+    animation-delay: 5.5s;
+  }
+  
+  .loader span:nth-child(3n+7) {
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  
+  @keyframes loader {
+    0% {
+      opacity: 0;
+  
+      -webkit-transform: translate(0, 0vh) rotateZ(0deg);
+    }
+    25% {
+      opacity: 1;
+  
+      -webkit-transform: translate(0, 25vh) rotateZ(90deg);
+    }
+    75% {
+      opacity: 1;
+  
+      -webkit-transform: translate(5vw, 75vh) rotateZ(270deg);
+    }
+    100% {
+      opacity: 0;
+  
+      -webkit-transform: translate(10vw, 100vh) rotateZ(360deg);
+    }
+  }
+  
+  @-webkit-keyframes loader {
+    0% {
+      opacity: 0;
+  
+      -webkit-transform: translate(0, 0vh) rotateZ(0deg);
+    }
+    25% {
+      opacity: 1;
+  
+      -webkit-transform: translate(0, 25vh) rotateZ(90deg);
+    }
+    75% {
+      opacity: 1;
+  
+      -webkit-transform: translate(5vw, 75vh) rotateZ(270deg);
+    }
+    100% {
+      opacity: 0;
+  
+      -webkit-transform: translate(10vw, 100vh) rotateZ(360deg);
+    }
+  }
+  
+  @-moz-keyframes loader {
+    0% {
+      opacity: 0;
+  
+      -webkit-transform: translate(0, 0vh) rotateZ(0deg);
+    }
+    25% {
+      opacity: 1;
+  
+      -webkit-transform: translate(0, 25vh) rotateZ(90deg);
+    }
+    75% {
+      opacity: 1;
+  
+      -webkit-transform: translate(5vw, 75vh) rotateZ(270deg);
+    }
+    100% {
+      opacity: 0;
+  
+      -webkit-transform: translate(10vw, 100vh) rotateZ(360deg);
+    }
+  }.rainbow {
+    /* Chrome, Safari, Opera */
+   -webkit-animation: rainbow 1s infinite; 
+   
+   /* Internet Explorer */
+   -ms-animation: rainbow 1s infinite;
+   
+   /* Standar Syntax */
+   animation: rainbow 1s infinite; 
+ }
+ 
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+     40%{color: yellow;}
+     60%{color: green;}
+     100%{color: blue;}
+     100%{color: orange;}	
+ }
+ /* Internet Explorer */
+ @-ms-keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+     40%{color: yellow;}
+     60%{color: green;}
+     100%{color: blue;}
+     100%{color: orange;}	
+ }
+ 
+ /* Standar Syntax */
+ @keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+     40%{color: yellow;}
+     60%{color: green;}
+     100%{color: blue;}
+     100%{color: orange;}
+ }
